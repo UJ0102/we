@@ -112,6 +112,19 @@ img {
   margin-bottom: 2rem;
 }
 
+.banner-title-line{
+  position: relative;
+}
+
+.banner-title-line::after{
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 1.5em;
+  border-top: solid 4px rgba(255, 255, 255, .3);
+}
+
 .banner-small {
   display: block;
   text-transform: uppercase;
@@ -135,12 +148,12 @@ img {
   margin-bottom: 4rem;
 }
 
-.banner-li + .banner-li {
+.banner-li+.banner-li {
   margin-left: 1rem;
   position: relative;
 }
 
-.banner-li + .banner-li::before {
+.banner-li+.banner-li::before {
   position: absolute;
   top: .4rem;
   left: -.6rem;
@@ -156,6 +169,15 @@ img {
 
 .banner-desc {
   line-height: 1.6;
+}
+
+.banner-desc-lg{
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.banner-desc + .banner-desc{
+  margin-top: 1rem;
 }
 
 .banner-btns {
@@ -200,6 +222,19 @@ img {
   bottom: -2rem;
 }
 
+.banner-img-fit{
+  height: 400px;
+  object-fit:cover;
+}
+
+.banner-service .banner-img-fit{
+  object-position: 0 -244px;
+}
+
+.banner-about .banner-img-fit{
+  object-position: 0 -194px;
+}
+
 .banner-index .banner-head, .banner-index .banner-body {
   padding-top: 3rem;
 }
@@ -213,4 +248,70 @@ img {
 .banner-index .banner-body {
   position: relative;
   width: 60%;
+}
+
+
+/* footer */
+.footer {
+  background-color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 7rem 1rem 1rem;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footer-ul {
+  display: flex;
+}
+
+.footer-img-logo {
+  max-width: 40px;
+  height: auto;
+  margin-bottom: .5rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+ font-weight: 600;
+  transition-duration: .3s;
+}
+
+.footer-desc {
+  font-size: .9rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-link:hover{
+  color: #cf7688;
+}
+
+.footer-li{
+  margin-left: 1rem;
+}
+
+/* aside */
+
+.aside{
+  bottom: 15rem;
+  right: 1rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.aside-link{
+  color: rgba(0, 0, 0, .2);
+  transition-duration: .3s;
+}
+
+.aside-link-top{
+  font-size: 3rem;
+}
+
+.aside-link:hover {
+color:rgba(0, 0, 0, .5);
 }
