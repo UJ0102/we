@@ -212,19 +212,81 @@
     right: -40px;
 }
 
-.build-content{
+.build-content {
     position: relative;
     z-index: 1;
 }
 
-.build-li-1,.build-li-1::before, .build-li-1::after{
+.build-li-1, .build-li-1::before, .build-li-1::after {
     background-color: #f5ba54;
 }
 
-.build-li-2,.build-li-2::before, .build-li-2::after{
+.build-li-2, .build-li-2::before, .build-li-2::after {
     background-color: #eaa666;
 }
 
-.build-li-3,.build-li-3::before, .build-li-3::after{
+.build-li-3, .build-li-3::before, .build-li-3::after {
     background-color: #cf7688;
+}
+
+/* animation-------------------------------- */
+
+.ani-move-downToUp, .ani-fadeIn-leftToRiht{
+    animation-fill-mode: forwards;
+}
+
+.ani-move-downToUp{
+    transform: translateY(120%);
+    animation-name: moveDownToUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.ani-fadeIn-leftToRiht{
+    transform: translateX(-100%);
+    animation-name: fadeInLeftToRight;
+    animation-duration: 1s;
+    opacity: 0;   
+}
+
+.ani-delay-1{
+    animation-delay: .3s;
+}
+
+.ani-delay-2{
+    animation-delay: .6s;
+}
+
+.ani-delay-3{
+    animation-delay: .9s;
+}
+
+.ani-delay-4{
+    animation-delay: 1s;
+}
+
+.ani-delay-5{
+    animation-delay: 1.2s;
+}
+
+.ani-delay-6{
+    animation-delay: 1.3s;
+}
+
+.ani-delay-7{
+    animation-delay: 1.4s;
+}
+
+
+@keyframes moveDownToUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeftToRight{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

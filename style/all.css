@@ -20,10 +20,12 @@ img {
 
 .container {
   max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .container-md {
   max-width: 800px;
+  box-sizing: border-box;
 }
 
 .mx-auto {
@@ -215,6 +217,7 @@ img {
 .banner-img-mobile {
   left: 0;
   bottom: 5rem;
+  z-index: 1;
 }
 
 .banner-img-pad {
