@@ -242,7 +242,7 @@
     animation-fill-mode: forwards;
 }
 
-.ani-fadeIn-leftToRiht{
+.ani-fadeIn-leftToRight{
     transform: translateX(-100%);
     animation-name: fadeInLeftToRight;
     animation-duration: 1s;
