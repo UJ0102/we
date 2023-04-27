@@ -231,7 +231,7 @@
 
 /* animation-------------------------------- */
 
-.ani-move-downToUp, .ani-fadeIn-leftToRiht{
+.ani-move-downToUp, .ani-fadeIn-leftToRight{
     animation-fill-mode: forwards;
 }
 
@@ -246,7 +246,7 @@
     transform: translateX(-100%);
     animation-name: fadeInLeftToRight;
     animation-duration: 1s;
-    opacity: 0;   
+    opacity: 0;  
 }
 
 .ani-delay-1{
