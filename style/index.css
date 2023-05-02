@@ -124,7 +124,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .3));
 }
 
-.base-intro .base-head, .base-btns {
+.base-intro .base-head, .base-intro .base-btns {
     text-align: left;
 }
 
@@ -289,4 +289,43 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width:480px) {
+
+/* service-mobile */
+
+.service-items{
+    flex-direction: column;
+}
+
+.service-item{
+    width: auto;
+}
+
+/* project-mobile */
+
+.project-item{
+    width: 33.3333%;
+}
+
+/* base-mobile */
+
+.base-intro{
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+}
+
+.base-intro .base-head{
+text-align: center;
+}
+
+.base-intro .base-btns{
+    text-align: center;
+}
+
+.base-build .base-body{
+    max-width: 55vw;
+}
+
 }

@@ -76,7 +76,31 @@ background-color: #cf7688;
     font-size: 1.25rem;
 }
 
-.process-li:nth-child(n+3){
+.process-li:nth-child(n + 3){
     padding-top: 0;
 }
 
+@media screen and (max-width:480px) {
+    
+.process-item, .process-ol{
+    flex-direction: column;
+}
+
+.process-head,.process-body,.process-li{
+    width: auto;
+}
+
+.process-head{
+    padding: 1rem;
+}
+
+.process-li{
+    padding: 0;
+    margin: 1rem;
+}
+
+.process-name{
+    text-align: center;
+}
+
+}
